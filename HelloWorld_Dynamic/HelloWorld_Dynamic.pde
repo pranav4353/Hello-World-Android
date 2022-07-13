@@ -1,10 +1,5 @@
-//Hello World Android
+//Global Variables
 //
-println("Hello World");
-print("Mr. Mercer is amazing!");
-println(" ");
-//
-//concatenation
 String mr = "Mr";
 char period = '.';
 char space = ' ';
@@ -13,10 +8,23 @@ String is = "is";
 String areYouSerious = "amazing";
 char exclamation = '!';
 //
-println(mr, period, teacher, is, areYouSerious, exclamation);
-println(mr+period+space+teacher+space+is+space+areYouSerious+exclamation); //plus: no space
+void setup() 
+{
+  //Canvas Setup
+  fullScreen();
+  //size();
+  //
+}//End setup
 //
-println(mr+period, teacher, is, areYouSerious+exclamation); //mixing commas and + signs
+void draw()
+{
+  println(mr+period, teacher, is, period+period+period, "\t\t\t"+areYouSerious+exclamation); //character escapse: letter is actully code b/c backslash, t+tab, n=newLine
+  //138: period=46(ascii decimal number), thus 46*3=138 (or period+period+period)
+  //
+}//End draw
 //
-println(mr+period, teacher, is, period+period+period, "\t\t\t"+areYouSerious+exclamation); //character escapse: letter is actully code b/c backslash, t+tab, n=newLine
-//138: period=46(ascii decimal number), thus 46*3=138 (or period+period+period)
+void keyPressed() {}//End keypressed
+//
+void mousePressed() {}//End moucePressed
+//
+//End MAIN Program
